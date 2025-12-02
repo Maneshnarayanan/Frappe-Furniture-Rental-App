@@ -1,0 +1,60 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-02 11:21:21.149743",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_code",
+  "serial_no",
+  "select_gcpy",
+  "damage_notes",
+  "damage_cost"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_code",
+   "fieldtype": "Link",
+   "label": "Item",
+   "options": "Item"
+  },
+  {
+   "fieldname": "serial_no",
+   "fieldtype": "Link",
+   "label": "Serial No",
+   "options": "Serial No"
+  },
+  {
+   "fieldname": "select_gcpy",
+   "fieldtype": "Select",
+   "label": "Condition On Return",
+   "options": "Good\nCleaned\nDamaged\nSeverely Damaged\nNeeds Repair\nMissing Parts"
+  },
+  {
+   "fieldname": "damage_notes",
+   "fieldtype": "Data",
+   "label": "Damage Notes"
+  },
+  {
+   "fieldname": "damage_cost",
+   "fieldtype": "Currency",
+   "label": "Damage Cost"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-12-02 12:12:20.974340",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Return Item",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,113 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RR-{YY}-#####",
+ "creation": "2025-12-02 11:18:04.366611",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_cwtq",
+  "rental_contract",
+  "late_days",
+  "maintenance_required",
+  "column_break_tiqc",
+  "return_date",
+  "late_fee",
+  "amended_from",
+  "section_break_qlow",
+  "items"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_cwtq",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Rental Return",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "rental_contract",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Rental Contract",
+   "options": "Rental Contract",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "return_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Return Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "late_days",
+   "fieldtype": "Int",
+   "label": "Late Days",
+   "non_negative": 1
+  },
+  {
+   "fieldname": "late_fee",
+   "fieldtype": "Currency",
+   "label": "Late Fee"
+  },
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Rental Return Item"
+  },
+  {
+   "default": "0",
+   "fieldname": "maintenance_required",
+   "fieldtype": "Check",
+   "label": "Maintenance Required"
+  },
+  {
+   "fieldname": "column_break_tiqc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qlow",
+   "fieldtype": "Section Break"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-02 11:24:06.242503",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Return",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

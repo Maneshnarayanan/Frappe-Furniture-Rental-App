@@ -4,6 +4,8 @@ app_publisher = "maneshk27@gmail.com"
 app_description = "furniture_rental"
 app_email = "maneshk27@gmail.com"
 app_license = "mit"
+developer_mode = 1
+
 
 # Apps
 # ------------------
