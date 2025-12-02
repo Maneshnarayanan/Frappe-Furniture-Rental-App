@@ -145,24 +145,15 @@ developer_mode = 1
 # Scheduled Tasks
 # ---------------
 
-# scheduler_events = {
-# 	"all": [
-# 		"furniture_rental.tasks.all"
-# 	],
-# 	"daily": [
-# 		"furniture_rental.tasks.daily"
-# 	],
-# 	"hourly": [
-# 		"furniture_rental.tasks.hourly"
-# 	],
-# 	"weekly": [
-# 		"furniture_rental.tasks.weekly"
-# 	],
-# 	"monthly": [
-# 		"furniture_rental.tasks.monthly"
-# 	],
-# }
-
+scheduler_events = {
+    "daily": [
+        "furniture_rental.api.scheduler.check_overdue_items",
+        "furniture_rental.api.scheduler.send_return_reminders"
+    ],
+    "hourly": [
+        "furniture_rental.api.scheduler.sync_serial_status"
+    ]
+}
 # Testing
 # -------
 

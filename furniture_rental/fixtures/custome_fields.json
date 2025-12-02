@@ -6,6 +6,7 @@
         "fieldname": "rental_staff_role",
         "fieldtype": "Select",
         "label": "Rental Staff Role",
+        "name": "rental_staff_role",
         "options": "Delivery\nPickup\nMaintenance\nCleaner",
         "insert_after": "employment_type"
     },
@@ -16,12 +17,14 @@
         "fieldname": "max_daily_deliveries",
         "fieldtype": "Int",
         "label": "Max Daily Deliveries",
+        "name": "max_daily_deliveries",
         "insert_after": "rental_staff_role"
     },
     {
         "doctype": "Custom Field",
         "dt": "Item",
         "module": "Furniture Rental",
+        "name": "is_rental_item",
         "fieldname": "is_rental_item",
         "fieldtype": "Check",
         "label": "Is Rental Item?",
@@ -34,6 +37,7 @@
         "fieldname": "rental_daily_rate",
         "fieldtype": "Currency",
         "label": "Daily Rental Rate",
+        "name": "rental_daily_rate_item",
         "insert_after": "is_stock_item"
     },
     {
@@ -42,6 +46,7 @@
         "module": "Furniture Rental",
         "fieldname": "rental_weekly_rate",
         "fieldtype": "Currency",
+        "name": "rental_weekly_rate_item",
         "label": "Weekly Rental Rate",
         "insert_after": "rental_daily_rate"
     },
@@ -51,6 +56,7 @@
         "module": "Furniture Rental",
         "fieldname": "rental_monthly_rate",
         "fieldtype": "Currency",
+        "name": "rental_monthly_rate_item",
         "label": "Monthly Rental Rate",
         "insert_after": "rental_weekly_rate"
     },
@@ -60,6 +66,7 @@
         "module": "Furniture Rental",
         "fieldname": "rental_condition",
         "fieldtype": "Select",
+        "name": "rental_condition_serial_no",
         "label": "Condition",
         "options": "Good\nCleaned\nMinor Scratches\nNeeds Cleaning\nNeeds Repair",
         "insert_after": "location"
@@ -70,6 +77,7 @@
         "module": "Furniture Rental",
         "fieldname": "last_rented_date",
         "fieldtype": "Date",
+        "name": "last_rented_date_serial_no",
         "label": "Last Rented Date",
         "insert_after": "rental_condition"
     },
@@ -78,6 +86,7 @@
         "dt": "Delivery Note",
         "module": "Furniture Rental",
         "fieldname": "is_rental_delivery",
+        "name": "is_rental_delivery",
         "fieldtype": "Check",
         "label": "Is Rental Delivery?",
         "insert_after": "customer_address"
@@ -89,6 +98,7 @@
         "fieldname": "rental_contract",
         "fieldtype": "Link",
         "label": "Rental Contract",
+        "name": "rental_contract_delivery_note",
         "options": "Rental Contract",
         "insert_after": "is_rental_delivery"
     },
@@ -100,6 +110,7 @@
         "fieldtype": "Link",
         "label": "Rental Contract",
         "options": "Rental Contract",
+        "name": "rental_contract_sales_invoice",
         "insert_after": "customer"
     },
     {
@@ -107,6 +118,7 @@
         "dt": "Customer",
         "module": "Furniture Rental",
         "fieldname": "event_type",
+        "name": "event_type",
         "fieldtype": "Select",
         "label": "Event Type",
         "options": "Wedding\nCorporate Event\nBirthday\nParty\nLong-term Rental",
@@ -115,6 +127,7 @@
     {
         "doctype": "Custom Field",
         "dt": "Customer",
+        "name": "preferred_delivery_time",
         "module": "Furniture Rental",
         "fieldname": "preferred_delivery_time",
         "fieldtype": "Data",
