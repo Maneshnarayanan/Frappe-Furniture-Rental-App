@@ -1,0 +1,124 @@
+[
+    {
+        "doctype": "Custom Field",
+        "dt": "Employee",
+        "module": "Furniture Rental",
+        "fieldname": "rental_staff_role",
+        "fieldtype": "Select",
+        "label": "Rental Staff Role",
+        "options": "Delivery\nPickup\nMaintenance\nCleaner",
+        "insert_after": "employment_type"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Employee",
+        "module": "Furniture Rental",
+        "fieldname": "max_daily_deliveries",
+        "fieldtype": "Int",
+        "label": "Max Daily Deliveries",
+        "insert_after": "rental_staff_role"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Item",
+        "module": "Furniture Rental",
+        "fieldname": "is_rental_item",
+        "fieldtype": "Check",
+        "label": "Is Rental Item?",
+        "insert_after": "item_group"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Item",
+        "module": "Furniture Rental",
+        "fieldname": "rental_daily_rate",
+        "fieldtype": "Currency",
+        "label": "Daily Rental Rate",
+        "insert_after": "is_stock_item"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Item",
+        "module": "Furniture Rental",
+        "fieldname": "rental_weekly_rate",
+        "fieldtype": "Currency",
+        "label": "Weekly Rental Rate",
+        "insert_after": "rental_daily_rate"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Item",
+        "module": "Furniture Rental",
+        "fieldname": "rental_monthly_rate",
+        "fieldtype": "Currency",
+        "label": "Monthly Rental Rate",
+        "insert_after": "rental_weekly_rate"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Serial No",
+        "module": "Furniture Rental",
+        "fieldname": "rental_condition",
+        "fieldtype": "Select",
+        "label": "Condition",
+        "options": "Good\nCleaned\nMinor Scratches\nNeeds Cleaning\nNeeds Repair",
+        "insert_after": "location"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Serial No",
+        "module": "Furniture Rental",
+        "fieldname": "last_rented_date",
+        "fieldtype": "Date",
+        "label": "Last Rented Date",
+        "insert_after": "rental_condition"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Delivery Note",
+        "module": "Furniture Rental",
+        "fieldname": "is_rental_delivery",
+        "fieldtype": "Check",
+        "label": "Is Rental Delivery?",
+        "insert_after": "customer_address"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Delivery Note",
+        "module": "Furniture Rental",
+        "fieldname": "rental_contract",
+        "fieldtype": "Link",
+        "label": "Rental Contract",
+        "options": "Rental Contract",
+        "insert_after": "is_rental_delivery"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Sales Invoice",
+        "module": "Furniture Rental",
+        "fieldname": "rental_contract",
+        "fieldtype": "Link",
+        "label": "Rental Contract",
+        "options": "Rental Contract",
+        "insert_after": "customer"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "module": "Furniture Rental",
+        "fieldname": "event_type",
+        "fieldtype": "Select",
+        "label": "Event Type",
+        "options": "Wedding\nCorporate Event\nBirthday\nParty\nLong-term Rental",
+        "insert_after": "customer_group"
+    },
+    {
+        "doctype": "Custom Field",
+        "dt": "Customer",
+        "module": "Furniture Rental",
+        "fieldname": "preferred_delivery_time",
+        "fieldtype": "Data",
+        "label": "Preferred Delivery Time",
+        "insert_after": "event_type"
+    }
+]

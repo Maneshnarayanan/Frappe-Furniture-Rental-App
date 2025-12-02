@@ -1,0 +1,188 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-12-02 14:44:32.853439",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "rental_contract",
+  "customer",
+  "column_break_info",
+  "contract_period",
+  "section_break_summary",
+  "total_rent_amount",
+  "deposit_received",
+  "column_break_charges",
+  "deposit_refund",
+  "section_break_charges",
+  "late_fee",
+  "damage_charges",
+  "cleaning_charges",
+  "missing_item_charges",
+  "column_break_total",
+  "total_charges",
+  "net_payable",
+  "net_receivable",
+  "section_break_items",
+  "items",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "rental_contract",
+   "fieldtype": "Link",
+   "label": "Rental Contract",
+   "options": "Rental Contract",
+   "reqd": 1
+  },
+  {
+   "fieldname": "customer",
+   "fieldtype": "Link",
+   "label": "Customer",
+   "options": "Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "contract_period",
+   "fieldtype": "Data",
+   "label": "Contract Period",
+   "read_only": 1
+  },
+
+  {
+   "fieldname": "column_break_info",
+   "fieldtype": "Column Break"
+  },
+
+  {
+   "fieldname": "section_break_summary",
+   "fieldtype": "Section Break",
+   "label": "Settlement Summary"
+  },
+
+  {
+   "fieldname": "total_rent_amount",
+   "fieldtype": "Currency",
+   "label": "Total Rent Amount",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deposit_received",
+   "fieldtype": "Currency",
+   "label": "Deposit Received",
+   "read_only": 1
+  },
+  {
+   "fieldname": "deposit_refund",
+   "fieldtype": "Currency",
+   "label": "Deposit Refund"
+  },
+
+  {
+   "fieldname": "column_break_charges",
+   "fieldtype": "Column Break"
+  },
+
+  {
+   "fieldname": "section_break_charges",
+   "fieldtype": "Section Break",
+   "label": "Charges"
+  },
+  {
+   "fieldname": "late_fee",
+   "fieldtype": "Currency",
+   "label": "Late Fee",
+   "default": 0
+  },
+  {
+   "fieldname": "damage_charges",
+   "fieldtype": "Currency",
+   "label": "Damage Charges",
+   "default": 0
+  },
+  {
+   "fieldname": "cleaning_charges",
+   "fieldtype": "Currency",
+   "label": "Cleaning Charges",
+   "default": 0
+  },
+  {
+   "fieldname": "missing_item_charges",
+   "fieldtype": "Currency",
+   "label": "Missing Item Charges",
+   "default": 0
+  },
+
+  {
+   "fieldname": "column_break_total",
+   "fieldtype": "Column Break"
+  },
+
+  {
+   "fieldname": "total_charges",
+   "fieldtype": "Currency",
+   "label": "Total Charges",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_payable",
+   "fieldtype": "Currency",
+   "label": "Net Amount Payable by Customer",
+   "read_only": 1
+  },
+  {
+   "fieldname": "net_receivable",
+   "fieldtype": "Currency",
+   "label": "Net Amount Receivable by Customer",
+   "read_only": 1
+  },
+
+  {
+   "fieldname": "section_break_items",
+   "fieldtype": "Section Break",
+   "label": "Returned / Damaged Items"
+  },
+
+  {
+   "fieldname": "items",
+   "fieldtype": "Table",
+   "label": "Items",
+   "options": "Rental Return Item"
+  },
+
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Small Text",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-12-02 14:45:01.037755",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Rental Settlement",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "rows_threshold_for_grid_search": 20,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
