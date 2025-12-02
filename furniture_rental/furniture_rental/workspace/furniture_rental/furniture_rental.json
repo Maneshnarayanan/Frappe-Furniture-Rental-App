@@ -1,0 +1,117 @@
+{
+ "app": "furniture_rental",
+ "charts": [],
+ "content": "[{\"id\":\"header_1\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Furniture Rental Dashboard</span>\",\"col\":12}}, {\"id\":\"row_1\",\"type\":\"row\",\"data\":{}}, {\"id\":\"shortcut_contract\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rental Contract\",\"col\":3}}, {\"id\":\"shortcut_return\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rental Return\",\"col\":3}}, {\"id\":\"shortcut_settlement\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Rental Settlement\",\"col\":3}}, {\"id\":\"shortcut_maintenance\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Maintenance Request\",\"col\":3}}, {\"id\":\"shortcut_movements\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Asset Movement Log\",\"col\":3}}, {\"id\":\"shortcut_delivery\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Delivery Assignment\",\"col\":3}}, {\"id\":\"row_reports\",\"type\":\"row\",\"data\":{}}, {\"id\":\"header_reports\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\">Reports</span>\",\"col\":12}}, {\"id\":\"shortcut_active_rentals\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Active Rentals\",\"col\":3}}, {\"id\":\"shortcut_pending_returns\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Pending Returns\",\"col\":3}}, {\"id\":\"shortcut_item_availability\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item Availability\",\"col\":3}}, {\"id\":\"row_links\",\"type\":\"row\",\"data\":{}}, {\"id\":\"header_links\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h5\\\">Quick Links</span>\",\"col\":12}}, {\"id\":\"shortcut_items\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Item\",\"col\":3}}, {\"id\":\"shortcut_serial\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Serial No\",\"col\":3}}, {\"id\":\"shortcut_customer\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Customer\",\"col\":3}}]",
+ "creation": "2025-12-02 17:47:49.812013",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "turntable",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Furniture Rental",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-12-02 17:54:17.056364",
+ "modified_by": "Administrator",
+ "module": "Furniture Rental",
+ "name": "Furniture Rental",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 28.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rental Contract",
+   "link_to": "Rental Contract",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Rental Return",
+   "link_to": "Rental Return",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Rental Settlement",
+   "link_to": "Rental Settlement",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Maintenance Request",
+   "link_to": "Maintenance Request",
+   "type": "DocType"
+  },
+  {
+   "color": "Purple",
+   "doc_view": "List",
+   "label": "Asset Movement Log",
+   "link_to": "Asset Movement Log",
+   "type": "DocType"
+  },
+  {
+   "color": "Teal",
+   "doc_view": "List",
+   "label": "Delivery Assignment",
+   "link_to": "Delivery Assignment",
+   "type": "DocType"
+  },
+  {
+   "color": "Green",
+   "doc_view": "Report Builder",
+   "label": "Active Rentals",
+   "link_to": "Active Rentals",
+   "type": "Report"
+  },
+  {
+   "color": "Green",
+   "doc_view": "Report Builder",
+   "label": "Pending Returns",
+   "link_to": "Pending Returns",
+   "type": "Report"
+  },
+  {
+   "color": "Green",
+   "doc_view": "Report Builder",
+   "label": "Item Availability",
+   "link_to": "Item Availability",
+   "type": "Report"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Item",
+   "link_to": "Item",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Serial No",
+   "link_to": "Serial No",
+   "type": "DocType"
+  },
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Customer",
+   "link_to": "Customer",
+   "type": "DocType"
+  }
+ ],
+ "title": "Furniture Rental",
+ "type": "Workspace"
+}
