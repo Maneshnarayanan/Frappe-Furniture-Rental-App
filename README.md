@@ -1,33 +1,67 @@
-### Furniture Rental
+# Furniture Rental for ERPNext
 
-furniture_rental
+Furniture Rental is a complete rental management module built on top of ERPNext & Frappe Framework.  
+It enables businesses to manage rental contracts, item delivery, returns, maintenance, settlements, and stock movement with automated workflows and business logic.
 
-### Installation
+---
 
-You can install this app using the [bench](https://github.com/frappe/bench) CLI:
+## 🚀 Features
 
+### ✔ Rental Contract Management
+- Create rental contracts with items, serial numbers, rental plans, and rental periods.
+- Supports daily, weekly, and monthly rental rates.
+- Auto-calculates total rent based on plan and duration.
+- Tracks deposit amount, conditions, and customer details.
+- Automatically marks rented serial items as **Out on Rent**.
+
+### ✔ Delivery Workflow
+- Automatic Delivery Assignment creation on contract submission.
+- Serial numbers update to **Out on Rent** status.
+- Asset Movement Logs track every movement of rental items.
+
+### ✔ Rental Return Workflow
+- Record return date, conditions, serial numbers, and notes.
+- Auto-calculates late days & late fees.
+- Automatically creates Maintenance Requests for damaged items.
+- Updates serial items back to **Available** or **Under Maintenance**.
+
+### ✔ Maintenance Management
+- Auto-generated maintenance requests for damaged returns.
+- Serial items locked during maintenance (status: Under Maintenance).
+- Released only when maintenance is completed.
+
+### ✔ Settlement / Final Billing
+- Complete settlement summary including:
+  - Total Rent
+  - Deposit
+  - Late Fees
+  - Damage Charges
+  - Cleaning Charges
+  - Missing Item Charges
+- Calculates net payable or refundable balance.
+- Marks rental contract as **Completed** on settlement.
+
+### ✔ Reports
+- **Item Availability**
+- **Active Rentals**
+- **Pending Returns**
+- **Items Out on Rent (optional)**
+
+### ✔ Scheduler Jobs
+- Daily overdue checker.
+- Automatic return reminders.
+- Hourly sync of serial number status.
+
+### ✔ Workspace (Dashboard)
+A dedicated Furniture Rental workspace with:
+- Quick shortcuts
+- Operational reports
+- Links to inventory and customer data
+
+---
+
+## 📦 Installation
+
+1. Go to your Frappe bench folder:
 ```bash
-cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch version-16-beta
-bench install-app furniture_rental
-```
-
-### Contributing
-
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
-
-```bash
-cd apps/furniture_rental
-pre-commit install
-```
-
-Pre-commit is configured to use the following tools for checking and formatting your code:
-
-- ruff
-- eslint
-- prettier
-- pyupgrade
-
-### License
-
-mit
+cd frappe-bench
