@@ -60,8 +60,3 @@ A dedicated Furniture Rental workspace with:
 
 ---
 
-## 📦 Installation
-
-1. Go to your Frappe bench folder:
-```bash
-cd frappe-bench
